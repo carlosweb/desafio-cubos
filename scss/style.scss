@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lato:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Abel', sans-serif;
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,
+input,textarea{
+    font-family: 'Abel', sans-serif;
+    font-weight: 400;
+}
+
+header{
+    background-color: #116193;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    h1{
+        color: #00E8E4;
+        font-family: 'Abel', sans-serif;
+        font-weight: 400;
+    }
+}
+
+main {
+    .container{
+        width: 960px; 
+        margin: 0 auto;
+        input[type="search"]{
+            border: 0;
+            background: #EBEBEB;
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 50px;
+            font-size: 1.16rem;
+            &::placeholder{
+                color: #116193;
+                font-size: 1.16rem;
+            }
+        }
+        .movies-list{
+            .img-movie{
+                max-width: 100%;
+                width: 30%;
+                height: auto;
+            }
+            margin-top: 20px;
+            .movies{
+                display: flex;
+                .content{
+                    background-color: #EBEBEB;
+                    .title{
+                        color: #00E8E4;
+                        background-color: #116193;
+                        padding: 10px 0 5px 80px;
+                    }
+                    .score{
+                        background-color: #116193;
+                        width: 60px;
+                        height: 60px;
+                        transform: translate(12px, -30px);
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &::after{
+                            content: "";
+                            width: 50px;
+                            height: 50px;
+                            border: 3px solid #00E8E4;
+                            border-radius: 50%;
+                            position: absolute;
+                            z-index: -1;
+                        }
+                        span{
+                            color: #00E8E4;
+                            font-size: 1.16rem;
+                        }
+                    }
+                    .date{
+                        color: #a5a5a5;
+                        transform: translate(80px, -60px);
+                        position: absolute;
+                    }
+                    .description{
+                        padding: 0 20px;
+                    }
+                    .tags{
+                        padding: 0 20px;
+                        margin-top: 20px;
+                        span{
+                            background-color: white;
+                            border: 1px solid #116193;
+                            color: #116193;
+                            padding: 3px 10px;
+                            border-radius: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
