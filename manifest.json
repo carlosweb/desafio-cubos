@@ -3,7 +3,7 @@
 	"name": "Find Movies Cubos",
 	"lang": "en",
 	"description": "App Desafio Técnico Cubos",
-	"start_url": "https://carlosweb.github.io/desafio-cubos/",
+	"start_url": "/index.html",
 	"background_color": "#116193",
 	"theme_color": "#ffffff",
 	"dir": "ltr",
