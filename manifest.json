@@ -1,25 +1,23 @@
 {
-	"lang": "pt",
-	"dir": "ltr",
 	"name": "Find Movies Cubos",
 	"short_name": "Find Movies",
 	"icons": [
 	  {
 		"src": "/assets/images/touch/android-chrome-192x192.png",
 		"sizes": "192x192",
-		"type": "image\/png"
+		"type": "image/png"
 	  },
 	  {
 		"src": "/assets/images/touch/favicon-16x16.png",
 		"sizes": "16x16",
-		"type": "image\/png"
+		"type": "image/png"
 	  }
 	],
 	"theme_color": "#116193",
 	"background_color": "#ffffff",
-	"start_url": "/index.html",
+	"start_url": "/",
 	"display": "standalone",
-	"orientation": "natural"
+	"orientation": "portrait"
   }
 
 
