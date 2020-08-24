@@ -1,0 +1,194 @@
+.score{
+    background-color: $color-blue;
+    width: 60px;
+    height: 60px;
+    transform: translate(12px, -30px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after{
+        content: "";
+        width: 50px;
+        height: 50px;
+        border: 3px solid $color-blue-ligth;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -1;
+    }
+    span{
+        color: $color-blue-ligth;
+        font-size: 1.16rem;
+    }
+}
+
+main {
+    .container{
+        width: 960px; 
+        margin: 0 auto;
+        input[type="search"]{
+            border: 0;
+            background: #EBEBEB;
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 50px;
+            font-size: 1.16rem;
+            outline: none;
+            &::placeholder{
+                color: $color-blue;
+                font-size: 1.16rem;
+            }
+        }
+        .movies-list{
+            .img-movie{
+                max-width: 100%;
+                width: 30%;
+                height: auto;
+            }
+            margin-top: 20px;
+            .movies{
+                display: flex;
+                margin-bottom: 20px;
+                cursor: pointer;
+                transition: 300ms ease-in-out;
+                
+                &:hover {
+                    box-shadow: 0px 2px 8px #c6c6c6;
+                    transform: translateX(15px) scale(1.1);
+                }
+                .content{
+                    background-color: #EBEBEB;
+                    width: 100%;
+                    padding-bottom: 20px;
+                    .title{
+                        color: $color-blue-ligth;
+                        background-color: $color-blue;
+                        padding: 10px 0 5px 80px;
+                    }
+                    .score{
+                        background-color: $color-blue;
+                        width: 60px;
+                        height: 60px;
+                        transform: translate(12px, -30px);
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &::after{
+                            content: "";
+                            width: 50px;
+                            height: 50px;
+                            border: 3px solid $color-blue-ligth;
+                            border-radius: 50%;
+                            position: absolute;
+                            z-index: -1;
+                        }
+                        span{
+                            color: $color-blue-ligth;
+                            font-size: 1.16rem;
+                        }
+                    }
+                    .date{
+                        color: #a5a5a5;
+                        transform: translate(80px, -55px);
+                        position: absolute;
+                    }
+                    .description{
+                        padding: 0 20px;
+                    }
+                    .tags{
+                        padding: 0 20px;
+                        margin-top: 20px;
+                        span{
+                            background-color: white;
+                            border: 1px solid $color-blue;
+                            color: $color-blue;
+                            padding: 3px 10px;
+                            border-radius: 50px;
+                        }
+                    }
+                }
+            }
+
+           
+             
+
+            .details-movie{
+                display: none;
+                background-color: #F2F2F2;
+                .title{
+                    background-color: #E6E6E6;
+                    padding: 15px 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    h2{
+                        color: $color-blue;
+                    }
+                    span{
+                        color: #a5a5a5;
+                    }
+                }
+                .content{
+                    display: flex;
+                    
+              
+                    .details{
+                        padding: 20px 20px;
+                        h3{
+                            color: #4280A7;
+                            border-bottom:1px solid $color-blue-ligth;
+                            margin-bottom: 10px;
+                        }
+                        p{
+                            margin-bottom: 40px;
+                        }
+                        .information{
+                            display: flex;
+                            h4{
+                                color: #4280A7;
+                                justify-content: center;
+                                align-items: center;
+                                display: flex;
+                                flex-direction: column;
+                                margin-right: 20px;
+                                
+                            }
+                            span{
+                                font-size: 0.7rem;
+                                color: #555555;
+                            }
+                        }
+                        .score{
+                            background-color: $color-blue;
+                            width: 80px;
+                            height: 80px;
+                            transform: translate(380px, 20px);
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &::after{
+                                content: "";
+                                width: 66px;
+                                height: 66px;
+                                border: 5px solid $color-blue-ligth;
+                                border-radius: 50%;
+                                position: absolute;
+                                z-index: -1;
+                            }
+                            span{
+                                color: $color-blue-ligth;
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                    img{
+                        max-width: 100%;
+                        width: 50%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
