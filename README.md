@@ -1,7 +1,7 @@
 ﻿# Desafio - Frontend Cubos
 
 
-## O Desafio
+## Objetivo
 Implementar um web app responsivo que consuma a [API do The Movie DB](https://www.themoviedb.org/documentation/api) e permita buscar e ver detalhes de filmes de seu catálogo.
 
 ![Screenshot](https://github.com/carlosweb/desafio-cubos/blob/master/assets/images/capa-desafio.png?raw=true)

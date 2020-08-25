@@ -20,7 +20,6 @@ const language = '&language=pt-BR'
 const list = document.querySelector('.movies-list')
 const inputSearch = document.querySelector('#search')
 
-
 const imagePosterNotFound = `https://lascrucesfilmfest.com/wp-content/uploads/2018/01/no-poster-available-737x1024.jpg`
 
 /**
@@ -41,21 +40,6 @@ const getMovies = async searchedTerm => {
     return movies
 }
 
-// const controls = () => {
-//     var items = movies
-//     var numberOfItems = items.length;
-//     var itemsPerPage = 5;
-
-//     getItems(4);
-
-//     function getItems(page) {
-//         var i;
-//         for (i = (page - 1) * itemsPerPage; i < page * itemsPerPage && i < numberOfItems; i++) {
-//             console.log(items[i]);
-//         }
-//     }
-// }
-
 /**
  * Busca imagem do poster através da combinação o path retornado pela API
  * 
@@ -73,9 +57,10 @@ const getMoviePoster = posterUrl => {
 const listMovies = async searchedTerm => {
     const movies = await getMovies(searchedTerm)
 
-    if (movies) {
+ if (movies) {
         list.innerHTML = ""
-        movies.map(({ poster_path, title, vote_average, release_date, overview }) => {
+        
+        movies.map(({ poster_path, title, vote_average, release_date, overview}) => {
             const tela =
                 `<div class="movies">
                 <img class="img-movie" src="${getMoviePoster(poster_path)}" alt="${title}" />
@@ -96,8 +81,8 @@ const listMovies = async searchedTerm => {
                         <span>Fantasia</span>
                     </div>
                 </div>
-            </div>`;
-
+            </div>
+            `
             list.innerHTML += tela
         });
     }
@@ -109,4 +94,37 @@ const listMovies = async searchedTerm => {
 inputSearch.addEventListener('keyup', event => {
     let searchedTerm = event.target.value
     listMovies(searchedTerm)
-});
+})
+
+
+/**
+ * paginação
+ */
+
+// const arr = []
+// let page = 1
+
+// for(let i = 0; i <= movies.length; i++){
+//     let li = document.createElement('li')
+//     li.textContent = `Item ${i}`
+//     arr.push(li)
+//     console.log(arr)
+// }
+
+// for(let i =0; i < page+ 5; i++) {
+//    teste.appendChild(arr[i])
+// }
+
+// n.addEventListener('click', () => {
+//     page == arr.length - 5 ? (page = 0) : (page += 5)
+//     for(let i = page; i < page + 5; i++ ){
+//         teste.appendChild(arr[i])
+//     }
+// })
+
+// b.addEventListener('click', () => {
+//     page == 0 ? page = arr.length -5 : (page -= 5)
+//     for(let i = page; i < page + 5; i++ ){
+//         teste.appendChild(arr[i])
+//     }
+// })
