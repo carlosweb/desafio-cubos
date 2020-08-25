@@ -75,7 +75,7 @@ const listMovies = async searchedTerm => {
 
     if (movies) {
         list.innerHTML = ""
-        movies.forEach(({ poster_path, title, vote_average, release_date, overview }) => {
+        movies.map(({ poster_path, title, vote_average, release_date, overview }) => {
             const tela =
                 `<div class="movies">
                 <img class="img-movie" src="${getMoviePoster(poster_path)}" alt="${title}" />

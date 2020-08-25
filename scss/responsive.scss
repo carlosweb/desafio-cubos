@@ -5,12 +5,20 @@
     }
 }
 
-
 @media (max-width: 680px) {
     main .container {
         width: 100%;
         padding: 0 20px;
     }
+
+    main .container input[type="search"] {
+        font-size: 1rem;
+    }
+
+    main .container input[type="search"]::placeholder{
+            font-size: 1rem;
+    }
+
     main .container .movies-list .img-movie {
         display: none;
     }
