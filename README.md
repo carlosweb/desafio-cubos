@@ -1,6 +1,7 @@
 ﻿# Desafio - Frontend Cubos
  
-##Demo do projeto
+## Demo do projeto
+
 [Link](https://carlosweb.github.io/desafio-cubos/)
 
 
@@ -47,7 +48,8 @@ $ https://github.com/carlosweb/desafio-cubos.git
 - SCSS
 - JAVASCRIPT
 - PWA
-#Proximas Atualizações
+
+## Proximas Atualizações
 -Paginação
 -Detalhes do movie
 -Utilizar ReactJs
