@@ -1,4 +1,7 @@
 ﻿# Desafio - Frontend Cubos
+ 
+##Demo do projeto
+[Link](https://carlosweb.github.io/desafio-cubos/)
 
 
 ## Objetivo
@@ -38,12 +41,16 @@ $ https://github.com/carlosweb/desafio-cubos.git
     -   Typescript, Flow ou similares
     -   Redux, MobX ou similares
 
-## Tecnologias
+## Tecnologias Utilizadas
 
 - HTML
 - SCSS
 - JAVASCRIPT
 - PWA
+#Proximas Atualizações
+-Paginação
+-Detalhes do movie
+-Utilizar ReactJs
 
 
 
